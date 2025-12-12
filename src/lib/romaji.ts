@@ -44,6 +44,12 @@ export const KANA_MAP: Record<string, string[]> = {
   ふぇ: ["fe"],
   ふぉ: ["fo"],
 
+  ゔ: ["vu"],
+  ゔぁ: ["va"],
+  ゔぃ: ["vi"],
+  ゔぇ: ["ve"],
+  ゔぉ: ["vo"],
+
   ま: ["ma"],
   み: ["mi"],
   む: ["mu"],

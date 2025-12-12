@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Koto-Koto (ことこと)
 
-## Getting Started
+**Japanese Zen Typing**
 
-First, run the development server:
+![Koto-Koto Banner](public/og-image.jpg) _[Add a screenshot here if available]_
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Overview
+
+**Koto-Koto** is a minimalist, zen-inspired Japanese typing game designed to induce a state of flow. Unlike frantic arcade typing games, Koto-Koto focuses on rhythm, aesthetics, and the beauty of the Japanese language.
+
+Built with **Next.js 15**, **TypeScript**, and **Framer Motion**, it features a custom-built, feature-rich typing engine that handles the nuances of Romaji-to-Kana conversion (e.g., `si` vs `shi`, `n` flexibility).
+
+## ✨ Features
+
+- **Zen Aesthetics**: A Deep Zen Dark theme with "Matcha", "Sakura", and "Gold" accents. Use of Mincho typography for a literary feel.
+- **Intelligent Typing Engine**:
+  - **Flexible Romaji**: Supports multiple input styles (Hepburn, Kunrei-shiki). Accepts `si`/`shi`, `tu`/`tsu`, `c`/`k`, etc.
+  - **N-Permisiveness**: gracefully handles the tricky `n` vs `nn` logic.
+- **Immersive Audio**: Procedurally generated wooden keystroke sounds using the Web Audio API (no external assets).
+- **Strict Grading System**:
+  - **Zen Titles**: Earn ranks from "Novice" to "Koto Master" and special S-Ranks.
+  - **Detailed Stats**: Tracks WPM, Accuracy, KPM, and Max Combo.
+- **Modern Tech Stack**: Fully responsive, strictly typed, and built for performance.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Installation
+
+1.  Clone the repository:
+
+    ```bash
+    git clone https://github.com/yourusername/koto-koto.git
+    cd koto-koto
+    ```
+
+2.  Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3.  Run the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+4.  Open [http://localhost:3000](http://localhost:3000) with your browser.
+
+## 📂 Project Structure
+
+The project follows a **Feature-based Architecture** for scalability and maintainability.
+
+```
+src/
+├── app/                 # Next.js App Router
+├── components/          # Shared aesthetic components (e.g., MobileBlocker)
+├── config/              # Centralized constants (Theme, Game Config)
+│   ├── gameConfig.ts    # Scoring thresholds, total sentences
+│   └── theme.ts         # Color palettes, fonts
+├── data/                # Word lists and content
+├── features/            # Feature-based modules
+│   ├── game/            # Core Game Logic
+│   │   ├── components/  # TypingArea, etc.
+│   │   └── hooks/       # useTypingEngine, useGameSession, useSound
+│   └── result/          # Result Screen Logic
+│       ├── components/  # ResultScreen
+│       └── utils/       # Rank calculation logic
+└── lib/                 # Core utilities (Romaji parser)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Philosophy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Visuals**: High contrast text with glowing carets against a noisy, deep-dark background.
+- **Typography**: `Zen Old Mincho` for Japanese text, `Inter` for UI elements.
+- **Feedback**: Subtle ripples and camera shakes (optional) provide physical feedback without breaking focus.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).

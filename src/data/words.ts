@@ -145,8 +145,8 @@ export const words: Sentence[] = [
   },
   {
     id: "tech_new_1",
-    display: "ハロー・ワールド。",
-    reading: "はろー・わーるど。",
+    display: "ハローワールド。",
+    reading: "はろーわーるど。",
   },
   {
     id: "tech_new_2",
@@ -362,7 +362,7 @@ export const words: Sentence[] = [
     display:
       "一人の人間にとっては小さな一歩だが、人類にとっては偉大な飛躍である。",
     reading:
-      "ひとりのにんげんにとってはちいさないっぽだが、じんるいにとってはいないなひやくである。",
+      "ひとりのにんげんにとってはちいさないっぽだが、じんるいにとってはいだいなひやくである。",
   },
 
   // --- Proverbs / Flows ---
