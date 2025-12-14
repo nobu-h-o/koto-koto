@@ -1,14 +1,15 @@
-# Koto-Koto (ことこと)
+# Koto-Koto (コトコト)
 
 **Japanese Zen Typing**
 
-![Koto-Koto Banner](public/og-image.jpg) _[Add a screenshot here if available]_
+<img width="2048" height="2048" alt="koto-koto_banner" src="https://github.com/user-attachments/assets/80f81de5-e797-4387-8cee-efc4ef408129" />
+
 
 ## Overview
 
 **Koto-Koto** is a minimalist, zen-inspired Japanese typing game designed to induce a state of flow. Unlike frantic arcade typing games, Koto-Koto focuses on rhythm, aesthetics, and the beauty of the Japanese language.
 
-Built with **Next.js 15**, **TypeScript**, and **Framer Motion**, it features a custom-built, feature-rich typing engine that handles the nuances of Romaji-to-Kana conversion (e.g., `si` vs `shi`, `n` flexibility).
+Built with **Next.js 16**, **TypeScript**, and **Framer Motion**, it features a custom-built, feature-rich typing engine that handles the nuances of Romaji-to-Kana conversion (e.g., `si` vs `shi`, `n` flexibility).
 
 ## ✨ Features
 
